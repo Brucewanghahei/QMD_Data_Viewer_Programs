@@ -1,0 +1,1579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1206</width>
+    <height>1024</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1184</width>
+           <height>991</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tab">
+             <attribute name="title">
+              <string>Regular Plotting</string>
+             </attribute>
+             <widget class="QGroupBox" name="groupBox_file">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>361</width>
+                <height>391</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>File</string>
+              </property>
+              <widget class="QLineEdit" name="lineEdit_address">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>200</y>
+                 <width>321</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_browse">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>160</x>
+                 <y>150</y>
+                 <width>81</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Browse</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>170</y>
+                 <width>91</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>File Address:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_4">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>310</y>
+                 <width>81</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Condition:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_condition1">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>340</y>
+                 <width>321</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Please choose your csv file type</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_10">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>110</y>
+                 <width>91</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Data Divider:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_divider">
+               <property name="geometry">
+                <rect>
+                 <x>120</x>
+                 <y>110</y>
+                 <width>221</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+              <widget class="QRadioButton" name="radioButton_qmd">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>30</y>
+                 <width>121</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>QMDLAB File</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+              <widget class="QRadioButton" name="radioButton_frontpanel">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>70</y>
+                 <width>171</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>FrontPanel Data File</string>
+               </property>
+              </widget>
+              <widget class="QRadioButton" name="radioButton_ppms">
+               <property name="geometry">
+                <rect>
+                 <x>150</x>
+                 <y>30</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>PPMS</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_openfile">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>260</x>
+                 <y>150</y>
+                 <width>81</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Open File</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_11">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>250</y>
+                 <width>91</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Recent open:</string>
+               </property>
+              </widget>
+              <widget class="QComboBox" name="comboBox_recent">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>120</x>
+                 <y>250</y>
+                 <width>221</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_recent">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>200</x>
+                 <y>290</y>
+                 <width>141</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Open Recent File</string>
+               </property>
+              </widget>
+              <widget class="QRadioButton" name="radioButton_zbridge">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>210</x>
+                 <y>70</y>
+                 <width>151</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>zBridge Data File</string>
+               </property>
+              </widget>
+              <widget class="QRadioButton" name="radioButton_compressor">
+               <property name="geometry">
+                <rect>
+                 <x>230</x>
+                 <y>30</y>
+                 <width>121</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Compressor</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QGroupBox" name="groupBox_labels">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>400</y>
+                <width>361</width>
+                <height>531</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>Labels</string>
+              </property>
+              <widget class="QLabel" name="label_6">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>20</y>
+                 <width>141</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Labels Text Box:</string>
+               </property>
+              </widget>
+              <widget class="QTextEdit" name="textEdit_labels">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>50</y>
+                 <width>341</width>
+                 <height>471</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>13</pointsize>
+                </font>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QGroupBox" name="groupBox_plot">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>380</x>
+                <y>10</y>
+                <width>771</width>
+                <height>921</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>Plot</string>
+              </property>
+              <widget class="QWidget" name="widget" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>10</y>
+                 <width>771</width>
+                 <height>501</height>
+                </rect>
+               </property>
+               <widget class="MatplotlibWidget" name="mplwidget">
+                <property name="geometry">
+                 <rect>
+                  <x>290</x>
+                  <y>200</y>
+                  <width>16</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QComboBox" name="comboBox_x">
+               <property name="geometry">
+                <rect>
+                 <x>140</x>
+                 <y>520</y>
+                 <width>201</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+              </widget>
+              <widget class="QComboBox" name="comboBox_y">
+               <property name="geometry">
+                <rect>
+                 <x>140</x>
+                 <y>690</y>
+                 <width>201</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_change_name">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>470</x>
+                 <y>690</y>
+                 <width>101</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Save Name</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_2">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>520</y>
+                 <width>51</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string> X-Axis</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_3">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>690</y>
+                 <width>61</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string> Y-Axis</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_5">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>840</y>
+                 <width>91</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Condition:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_condition2">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>870</y>
+                 <width>341</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_7">
+               <property name="geometry">
+                <rect>
+                 <x>400</x>
+                 <y>570</y>
+                 <width>101</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string> X-Axis Name:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_x">
+               <property name="geometry">
+                <rect>
+                 <x>510</x>
+                 <y>570</y>
+                 <width>231</width>
+                 <height>31</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_8">
+               <property name="geometry">
+                <rect>
+                 <x>400</x>
+                 <y>620</y>
+                 <width>111</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string> Y-Axis Name:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_y">
+               <property name="geometry">
+                <rect>
+                 <x>510</x>
+                 <y>620</y>
+                 <width>231</width>
+                 <height>31</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_9">
+               <property name="geometry">
+                <rect>
+                 <x>400</x>
+                 <y>520</y>
+                 <width>101</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string> Plot Name:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_name">
+               <property name="geometry">
+                <rect>
+                 <x>510</x>
+                 <y>520</y>
+                 <width>231</width>
+                 <height>31</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_Plot">
+               <property name="geometry">
+                <rect>
+                 <x>610</x>
+                 <y>680</y>
+                 <width>111</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>20</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Plot</string>
+               </property>
+              </widget>
+              <widget class="QGroupBox" name="groupBox">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>560</y>
+                 <width>341</width>
+                 <height>111</height>
+                </rect>
+               </property>
+               <property name="title">
+                <string/>
+               </property>
+               <widget class="QComboBox" name="comboBox_x_2">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>40</y>
+                  <width>201</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+               </widget>
+               <widget class="QRadioButton" name="radioButton_x_multiply">
+                <property name="geometry">
+                 <rect>
+                  <x>100</x>
+                  <y>10</y>
+                  <width>81</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Multiply</string>
+                </property>
+               </widget>
+               <widget class="QRadioButton" name="radioButton_x_divide">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>10</y>
+                  <width>71</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Divide</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QRadioButton" name="radioButton_x_plus">
+                <property name="geometry">
+                 <rect>
+                  <x>190</x>
+                  <y>10</y>
+                  <width>71</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Plus</string>
+                </property>
+               </widget>
+               <widget class="QRadioButton" name="radioButton_x_minus">
+                <property name="geometry">
+                 <rect>
+                  <x>260</x>
+                  <y>10</y>
+                  <width>71</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Minus</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_12">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>40</y>
+                  <width>111</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Second  X-Axis</string>
+                </property>
+               </widget>
+               <widget class="QCheckBox" name="checkBox_x_value">
+                <property name="geometry">
+                 <rect>
+                  <x>190</x>
+                  <y>80</y>
+                  <width>131</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Absolute Value</string>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QGroupBox" name="groupBox_2">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>730</y>
+                 <width>341</width>
+                 <height>111</height>
+                </rect>
+               </property>
+               <property name="title">
+                <string/>
+               </property>
+               <widget class="QComboBox" name="comboBox_y_2">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>40</y>
+                  <width>201</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+               </widget>
+               <widget class="QRadioButton" name="radioButton_y_multiply">
+                <property name="geometry">
+                 <rect>
+                  <x>100</x>
+                  <y>10</y>
+                  <width>81</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Multiply</string>
+                </property>
+               </widget>
+               <widget class="QRadioButton" name="radioButton_y_divide">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>10</y>
+                  <width>71</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Divide</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QRadioButton" name="radioButton_y_plus">
+                <property name="geometry">
+                 <rect>
+                  <x>190</x>
+                  <y>10</y>
+                  <width>71</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Plus</string>
+                </property>
+               </widget>
+               <widget class="QRadioButton" name="radioButton_y_minus">
+                <property name="geometry">
+                 <rect>
+                  <x>260</x>
+                  <y>10</y>
+                  <width>71</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Minus</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_13">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>40</y>
+                  <width>111</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Second  Y-Axis</string>
+                </property>
+               </widget>
+               <widget class="QCheckBox" name="checkBox_y_value">
+                <property name="geometry">
+                 <rect>
+                  <x>190</x>
+                  <y>80</y>
+                  <width>131</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Absolute Value</string>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QGroupBox" name="groupBox_date">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>400</x>
+                 <y>760</y>
+                 <width>351</width>
+                 <height>151</height>
+                </rect>
+               </property>
+               <property name="title">
+                <string>Find Date</string>
+               </property>
+               <widget class="QLabel" name="label_18">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>30</y>
+                  <width>61</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Time:</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEdit_minute">
+                <property name="geometry">
+                 <rect>
+                  <x>70</x>
+                  <y>30</y>
+                  <width>151</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_19">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>70</y>
+                  <width>111</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Date &amp; Time:</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEdit_date">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>100</y>
+                  <width>331</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="pushButton_find">
+                <property name="geometry">
+                 <rect>
+                  <x>250</x>
+                  <y>30</y>
+                  <width>81</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Find</string>
+                </property>
+               </widget>
+              </widget>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="tab_2">
+             <attribute name="title">
+              <string>Step Plotting</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QGroupBox" name="groupBox_3">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="title">
+                 <string>First Step Plotting</string>
+                </property>
+                <widget class="QWidget" name="widget_first_step" native="true">
+                 <property name="geometry">
+                  <rect>
+                   <x>230</x>
+                   <y>0</y>
+                   <width>931</width>
+                   <height>471</height>
+                  </rect>
+                 </property>
+                 <widget class="MatplotlibWidget" name="mplwidget_first_step">
+                  <property name="geometry">
+                   <rect>
+                    <x>290</x>
+                    <y>200</y>
+                    <width>16</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                 </widget>
+                </widget>
+                <widget class="QComboBox" name="comboBox_y_first_step">
+                 <property name="geometry">
+                  <rect>
+                   <x>20</x>
+                   <y>90</y>
+                   <width>201</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_plot_first_step">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="geometry">
+                  <rect>
+                   <x>130</x>
+                   <y>370</y>
+                   <width>81</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>13</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Plot</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_14">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="geometry">
+                  <rect>
+                   <x>160</x>
+                   <y>50</y>
+                   <width>61</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string> Y-Axis</string>
+                 </property>
+                </widget>
+                <widget class="QGroupBox" name="groupBox_first">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>140</y>
+                   <width>221</width>
+                   <height>211</height>
+                  </rect>
+                 </property>
+                 <property name="title">
+                  <string/>
+                 </property>
+                 <widget class="QComboBox" name="comboBox_first">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>130</y>
+                    <width>201</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                 </widget>
+                 <widget class="QRadioButton" name="radioButton_first_multiply">
+                  <property name="geometry">
+                   <rect>
+                    <x>120</x>
+                    <y>10</y>
+                    <width>81</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Multiply</string>
+                  </property>
+                 </widget>
+                 <widget class="QRadioButton" name="radioButton_first_divide">
+                  <property name="geometry">
+                   <rect>
+                    <x>30</x>
+                    <y>10</y>
+                    <width>71</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Divide</string>
+                  </property>
+                  <property name="checked">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                 <widget class="QRadioButton" name="radioButton_first_plus">
+                  <property name="geometry">
+                   <rect>
+                    <x>30</x>
+                    <y>50</y>
+                    <width>71</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Plus</string>
+                  </property>
+                 </widget>
+                 <widget class="QRadioButton" name="radioButton_first_minus">
+                  <property name="geometry">
+                   <rect>
+                    <x>120</x>
+                    <y>50</y>
+                    <width>71</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Minus</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_16">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>90</y>
+                    <width>111</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Second  Y-Axis</string>
+                  </property>
+                 </widget>
+                 <widget class="QCheckBox" name="checkBox_first">
+                  <property name="geometry">
+                   <rect>
+                    <x>80</x>
+                    <y>180</y>
+                    <width>131</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Absolute Value</string>
+                  </property>
+                 </widget>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_4">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="title">
+                 <string>Second Step Plotting</string>
+                </property>
+                <widget class="QWidget" name="widget_second_step" native="true">
+                 <property name="geometry">
+                  <rect>
+                   <x>230</x>
+                   <y>0</y>
+                   <width>931</width>
+                   <height>471</height>
+                  </rect>
+                 </property>
+                 <widget class="MatplotlibWidget" name="mplwidget_second_step">
+                  <property name="geometry">
+                   <rect>
+                    <x>290</x>
+                    <y>200</y>
+                    <width>16</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                 </widget>
+                </widget>
+                <widget class="QComboBox" name="comboBox_y_second_step">
+                 <property name="geometry">
+                  <rect>
+                   <x>20</x>
+                   <y>90</y>
+                   <width>201</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_plot_second_step">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="geometry">
+                  <rect>
+                   <x>130</x>
+                   <y>380</y>
+                   <width>81</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>13</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Plot</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_15">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="geometry">
+                  <rect>
+                   <x>160</x>
+                   <y>50</y>
+                   <width>61</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string> Y-Axis</string>
+                 </property>
+                </widget>
+                <widget class="QGroupBox" name="groupBox_second">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>150</y>
+                   <width>221</width>
+                   <height>211</height>
+                  </rect>
+                 </property>
+                 <property name="title">
+                  <string/>
+                 </property>
+                 <widget class="QComboBox" name="comboBox_second">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>130</y>
+                    <width>201</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                 </widget>
+                 <widget class="QRadioButton" name="radioButton_second_multiply">
+                  <property name="geometry">
+                   <rect>
+                    <x>120</x>
+                    <y>10</y>
+                    <width>81</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Multiply</string>
+                  </property>
+                 </widget>
+                 <widget class="QRadioButton" name="radioButton_second_divide">
+                  <property name="geometry">
+                   <rect>
+                    <x>30</x>
+                    <y>10</y>
+                    <width>71</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Divide</string>
+                  </property>
+                  <property name="checked">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                 <widget class="QRadioButton" name="radioButton_second_plus">
+                  <property name="geometry">
+                   <rect>
+                    <x>30</x>
+                    <y>50</y>
+                    <width>71</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Plus</string>
+                  </property>
+                 </widget>
+                 <widget class="QRadioButton" name="radioButton_second_minus">
+                  <property name="geometry">
+                   <rect>
+                    <x>120</x>
+                    <y>50</y>
+                    <width>71</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Minus</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_17">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>90</y>
+                    <width>111</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Second  Y-Axis</string>
+                  </property>
+                 </widget>
+                 <widget class="QCheckBox" name="checkBox_second">
+                  <property name="geometry">
+                   <rect>
+                    <x>80</x>
+                    <y>180</y>
+                    <width>131</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Absolute Value</string>
+                  </property>
+                 </widget>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MatplotlibWidget</class>
+   <extends>QWidget</extends>
+   <header>matplotlibwidget</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
